@@ -40,13 +40,18 @@ export const techStack = [
 ]
 
 
-export const contactLinks = [{ name: 'Stack Overflow', url: '', link: 'https://stackoverflow.com' },
-{ name: 'Instagram', url: '/icons/instagram2.svg', link: 'https://www.instagram.com/ahmedturkii.ii/' },
-{ name: 'Github', url: '/icons/github.svg' , link :'https://github.com/AhmedTurkiii'},
-{ name: 'LinkedIn', url: '/icons/linkedin2.svg', link: 'https://www.linkedin.com/in/torki-ah/'}
-]
+// export const contactLinks = [{ name: 'Stack Overflow', url: '', link: 'https://stackoverflow.com' },
+// { name: 'Instagram', url: '/icons/instagram2.svg', link: 'https://www.instagram.com/ahmedturkii.ii/' },
+// { name: 'Github', url: '/icons/github.svg' , link :'https://github.com/AhmedTurkiii'},
+// { name: 'LinkedIn', url: '/icons/linkedin2.svg', link: 'https://www.linkedin.com/in/torki-ah/'}
+// ]
 
-
+export const contactLinks = [
+  { name: 'Stack Overflow', url: '', link: 'https://stackoverflow.com' },
+  { name: 'Instagram', url: `${process.env.PUBLIC_URL}/icons/instagram2.svg`, link: 'https://www.instagram.com/ahmedturkii.ii/' },
+  { name: 'Github', url: `${process.env.PUBLIC_URL}/icons/github.svg`, link: 'https://github.com/AhmedTurkiii' },
+  { name: 'LinkedIn', url: `${process.env.PUBLIC_URL}/icons/linkedin2.svg`, link: 'https://www.linkedin.com/in/torki-ah/' }
+];
 
 export const serviceData = [
   {
