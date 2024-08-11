@@ -11,7 +11,7 @@ const projects = [
     repoLink: "https://github.com/aleguzmancs9/Weather",
     date: "Sep 2020 - Feb 2021",
     remote: false,
-    image: "/5544723.jpg"  // Replace with actual image URL
+    image: "${process.env.PUBLIC_URL}/5544723.jpg"  // Replace with actual image URL
   },
   {
     title: "Car Services Web Application (Car-Tech)",
@@ -29,7 +29,7 @@ const projects = [
     repoLink: "https://github.com/AhmedTurkiii/Movie",
     date: "Sep 2021 - Present",
     remote: false,
-    image: "/3Z_2103.w023.n001.224B.p1.224.jpg"  // Replace with actual image URL
+    image: `${process.env.PUBLIC_URL}/3Z_2103.w023.n001.224B.p1.224.jpg`
   }
 ];
 
