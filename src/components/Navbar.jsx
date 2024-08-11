@@ -59,11 +59,10 @@ const Navbar = () => {
               }
             >
               <img
-                src="/icons/logo3.svg"
+                src={`${process.env.PUBLIC_URL}/icons/logo3.svg`}
                 alt="Logo"
                 className="inline-block h-6 w-auto"
-                style={{ height: '60px', width: 'auto' }} // Custom height and width
-
+                style={{ height: "60px", width: "auto" }} // Custom height and width
               />
             </a>
           </div>
