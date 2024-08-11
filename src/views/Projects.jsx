@@ -11,7 +11,7 @@ const projects = [
     repoLink: "https://github.com/aleguzmancs9/Weather",
     date: "Sep 2020 - Feb 2021",
     remote: false,
-    image: `${process.env.PUBLIC_URL}/5544723.jpg`
+    image: `${process.env.PUBLIC_URL}/icons/weatherapp2.png` 
   },
   {
     title: "Car Services Web Application (Car-Tech)",
@@ -20,7 +20,7 @@ const projects = [
     repoLink: "https://github.com/alikhaled17/Car-Tech-TeamB",
     date: "Sep 2020 - Feb 2021",
     remote: true,
-    image: `${process.env.PUBLIC_URL}/mechanic-hand-checking-fixing-broken-car-car-service-garage.jpg`
+    image: `${process.env.PUBLIC_URL}/icons/cartechapp.png`
   },
   {
     title: "Movie Android App (MovieApp)",
@@ -29,7 +29,7 @@ const projects = [
     repoLink: "https://github.com/AhmedTurkiii/Movie",
     date: "Sep 2021 - Present",
     remote: false,
-    image: `${process.env.PUBLIC_URL}/3Z_2103.w023.n001.224B.p1.224.jpg`
+    image: `${process.env.PUBLIC_URL}/icons/movieapp.png`
   }
 ];
 
