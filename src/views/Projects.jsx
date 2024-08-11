@@ -9,7 +9,7 @@ const projects = [
     description: "Collaborated within a team of 4 engineers to develop a Python weather app with multimedia elements for visualizing current weather conditions, integrating Flask, OpenAI, WeatherAPI, and IpstackAPI.",
     techStack: "Python, HTML, CSS, Flask, OpenAI, WeatherAPI, IpstackAPI",
     repoLink: "https://github.com/aleguzmancs9/Weather",
-    date: "Sep 2020 - Feb 2021",
+    // date: "Sep 2020 - Feb 2021",
     remote: false,
     image: `${process.env.PUBLIC_URL}/icons/weatherapp2.png` 
   },
@@ -18,8 +18,8 @@ const projects = [
     description: "Participated in a team of 4 contributors to make a responsive and consumer-friendly website using PHP, MySQL, HTML5, CSS3, Bootstrap, jQuery, and JavaScript.",
     techStack: "PHP, MySQL, HTML5, CSS3, Bootstrap, jQuery, JavaScript",
     repoLink: "https://github.com/alikhaled17/Car-Tech-TeamB",
-    date: "Sep 2020 - Feb 2021",
-    remote: true,
+    // date: "Sep 2020 - Feb 2021",
+    // remote: true,
     image: `${process.env.PUBLIC_URL}/icons/cartechapp.png`
   },
   {
@@ -27,7 +27,7 @@ const projects = [
     description: "Built a movie app MVVM architecture, Retrofit for networking, and Dagger Hilt for dependency injection. Built with Kotlin, MVVM, Retrofit, Dagger Hilt, RESTful.",
     techStack: "Kotlin, MVVM, Retrofit, Dagger Hilt, RESTful",
     repoLink: "https://github.com/AhmedTurkiii/Movie",
-    date: "Sep 2021 - Present",
+    // date: "Sep 2021 - Present",
     remote: false,
     image: `${process.env.PUBLIC_URL}/icons/movieapp.png`
   }
