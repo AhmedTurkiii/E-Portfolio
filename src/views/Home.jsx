@@ -34,9 +34,11 @@ const Home = () => {
               <span className="block text-blue-500 z-0 lg:inline">
                 <Typical
                   steps={[
-                    "Mobile Developer",
+                    "Software Engineer",
                     1000,
-                    "Front End Developer",
+                    "Mobile App Developer",
+                    1000,
+                    "Front-End Developer",
                     1000,
                     "Automation Tester",
                     1000,
@@ -52,9 +54,8 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am a Android Mobile Application / Front-End Developer. I am
-              currently working at California State University, Monterey Bay as
-              a Front-End Developer / Teaching Assistant
+              I am currently working at California State University, Monterey Bay as a Front-End Developer and Teaching Assistant.
+              I am actively seeking internships or entry-level Software Engineering roles to further develop my skills and contribute to innovative projects.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
@@ -70,7 +71,7 @@ const Home = () => {
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
                 <a
-                  href="https://drive.google.com/file/d/1MJRE5Z7NOdNH9uOtUBZT4YPjhbSXMtkX/view?usp=sharing"
+                  href="https://drive.google.com/file/d/14UsX2dVumGOdeHh8aN9QvIptDlL1YCXP/view?usp=sharing"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
                   target="_blank"
                   rel="noopener noreferrer"
