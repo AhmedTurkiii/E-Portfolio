@@ -36,7 +36,7 @@ export const serviceData = [
   },
   {
     name: 'Mobile Application Development',
-    desc: `We provide a range of mobile application development services
+    desc: `I provide a range of mobile application development services
     including custom mobile development on Android platforms, building
     cross-platform apps, designing user experience and integrating
     novel mobile interfaces such as chat and voice`,
@@ -45,7 +45,7 @@ export const serviceData = [
 
   {
     name: 'Automation Testing',
-    desc: `We offer comprehensive Automation Testing services using Mocha and Jest to streamline your software validation process. Our service includes creating and executing automated test scripts to ensure robust functionality and early defect detection. With Mocha’s flexible environment and Jest’s integrated solution, we deliver efficient and reliable testing, leading to higher software quality and faster release cycles for your projects.`,
+    desc: `I offer comprehensive Automation Testing services using Mocha and Jest to streamline your software validation process. Our service includes creating and executing automated test scripts to ensure robust functionality and early defect detection. With Mocha’s flexible environment and Jest’s integrated solution, I deliver efficient and reliable testing, leading to higher software quality and faster release cycles for your projects.`,
 
     img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png"
   },
