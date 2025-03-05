@@ -54,8 +54,7 @@ const Home = () => {
                   : "mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
               }
             >
-              I am currently working at California State University, Monterey Bay as a Front-End Developer and Teaching Assistant.
-              I am actively seeking internships or entry-level Software Engineering roles to further develop my skills and contribute to innovative projects.
+I am currently a Software Engineer Intern at Metafoodx. Previously, I worked at California State University – Monterey Bay. I am seeking internships or entry-level Software Engineering roles to further develop my skills and contribute to innovative projects.
             </p>
             <div className="flex md:justify-start ">
               {contactLinks.map((el) => (
