@@ -1,0 +1,72 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1D4ED8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Car icon -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="20" width="80" height="30" rx="15" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="15" cy="45" r="8" fill="#1E40AF"/>
+    <circle cx="65" cy="45" r="8" fill="#1E40AF"/>
+    <rect x="10" y="15" width="60" height="15" rx="4" fill="#F1F5F9"/>
+    <rect x="20" y="10" width="40" height="8" rx="2" fill="#1E40AF"/>
+  </g>
+  
+  <!-- Calendar/booking -->
+  <g transform="translate(150, 60)">
+    <rect x="0" y="0" width="100" height="80" rx="8" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="10" y="10" width="80" height="8" rx="4" fill="#1E40AF"/>
+    <rect x="10" y="25" width="80" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="35" width="60" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="45" width="70" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="55" width="50" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="65" width="40" height="4" rx="2" fill="#6B7280"/>
+  </g>
+  
+  <!-- User management -->
+  <g transform="translate(270, 60)">
+    <circle cx="25" cy="25" r="20" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <circle cx="25" cy="20" r="8" fill="#1E40AF"/>
+    <rect x="15" y="30" width="20" height="15" rx="4" fill="#1E40AF"/>
+  </g>
+  
+  <!-- Database -->
+  <g transform="translate(50, 180)">
+    <ellipse cx="30" cy="20" rx="25" ry="8" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="5" y="20" width="50" height="30" rx="4" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <ellipse cx="30" cy="50" rx="25" ry="8" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="20" y="25" width="20" height="20" rx="2" fill="#1E40AF"/>
+  </g>
+  
+  <!-- API endpoints -->
+  <g transform="translate(150, 180)">
+    <rect x="0" y="0" width="120" height="60" rx="8" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="10" y="10" width="100" height="6" rx="3" fill="#059669"/>
+    <rect x="10" y="20" width="80" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="28" width="90" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="36" width="70" height="4" rx="2" fill="#6B7280"/>
+    <rect x="10" y="44" width="60" height="4" rx="2" fill="#6B7280"/>
+  </g>
+  
+  <!-- Payment/credit card -->
+  <g transform="translate(300, 180)">
+    <rect x="0" y="0" width="60" height="40" rx="6" fill="url(#card)" stroke="#E2E8F0" stroke-width="2"/>
+    <rect x="5" y="5" width="50" height="8" rx="2" fill="#1F2937"/>
+    <rect x="5" y="18" width="30" height="4" rx="2" fill="#6B7280"/>
+    <rect x="5" y="28" width="20" height="4" rx="2" fill="#9CA3AF"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="30" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="24" font-weight="bold">Car Rental API</text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="14" opacity="0.8">Node.js • Express • MongoDB • Payment API</text>
+</svg>
