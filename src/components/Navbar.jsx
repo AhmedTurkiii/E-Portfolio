@@ -58,7 +58,7 @@ const Navbar = () => {
               >
                 <img
                   src={`${process.env.PUBLIC_URL}/icons/logo3.svg`}
-                  alt="Ahmed Torki"
+                  alt="Torki"
                   className="h-12 w-auto"
                 />
               </a>

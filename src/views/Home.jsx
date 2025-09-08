@@ -142,7 +142,7 @@ const Home = () => {
             >
               <span className="block">Hi, I'm</span>
               <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Ahmed Torki
+                Torki
               </span>
               <span className="block text-4xl sm:text-5xl md:text-6xl font-light mt-6">
                 <Typical
