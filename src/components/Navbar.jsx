@@ -18,10 +18,6 @@ const Navbar = () => {
       route: "about",
     },
     {
-      name: "Services",
-      route: "services",
-    },
-    {
       name: "Projects",
       route: "projects",
     },
@@ -42,133 +38,150 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={
+        className={`fixed w-full top-0 z-50 backdrop-blur-md border-b transition-all duration-500 ${
           darkMode
-            ? "bg-white border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
-            : "bg-gray-700 border-gray-200 z-50 shadow-lg md:px-8 px-1 fixed w-full top-0"
-        }
+            ? "bg-white/10 border-white/20"
+            : "bg-black/5 border-gray-200"
+        }`}
       >
-        <div className="flex justify-between items-center py-2 md:py-4 md:px-2 pl-2 mx-auto">
-          <div className="flex items-center cursor-pointer">
-            <a
-              href="/E-Portfolio"
-              className={
-                darkMode
-                  ? "text-xl font-medium text-decoration-none whitespace-nowrap text-black"
-                  : "text-xl font-medium text-decoration-none whitespace-nowrap text-white"
-              }
-            >
-              <img
-                src={`${process.env.PUBLIC_URL}/icons/logo3.svg`}
-                alt="Logo"
-                className="inline-block h-6 w-auto"
-                style={{ height: "60px", width: "auto" }} // Custom height and width
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center cursor-pointer">
+              <a
+                href="/E-Portfolio"
+                className={`text-xl font-bold transition-colors duration-300 ${
+                  darkMode ? "text-white" : "text-gray-900"
+                }`}
+                style={{
+                  fontFamily: "'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif"
+                }}
+              >
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/logo3.svg`}
+                  alt="Ahmed Torki"
+                  className="h-12 w-auto"
+                />
+              </a>
+            </div>
+            
+            <div className="hidden md:flex justify-between items-center w-full md:w-auto">
+              <ul className="flex flex-row space-x-8">
+                {links.map((el, index) => (
+                  <li key={index} className="cursor-pointer">
+                    <Link
+                      to={el.route}
+                      activeClass="text-blue-500"
+                      spy={true}
+                      smooth={true}
+                      className={`block py-2 px-3 text-lg font-medium transition-all duration-300 hover:text-blue-500 rounded-lg ${
+                        darkMode ? "text-white hover:bg-white/10" : "text-gray-700 hover:bg-gray-100"
+                      }`}
+                      style={{
+                        fontFamily: "'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
+                      }}
+                    >
+                      {el.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              <div 
+                onClick={() => toggleTheme()}
+                className={`ml-8 p-3 rounded-xl cursor-pointer transition-all duration-300 hover:scale-110 ${
+                  darkMode ? "bg-white/10 hover:bg-white/20" : "bg-gray-100 hover:bg-gray-200"
+                }`}
+              >
+                {darkMode ? (
+                  <img
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
+                    className="w-6 h-6"
+                    alt="Light Mode"
+                  />
+                ) : (
+                  <img
+                    src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
+                    className="w-6 h-6"
+                    alt="Dark Mode"
+                  />
+                )}
+              </div>
+            </div>
+
+            <div className="flex md:hidden items-center space-x-4">
+              <div 
+                onClick={() => toggleTheme()}
+                className={`p-2 rounded-lg cursor-pointer transition-all duration-300 ${
+                  darkMode ? "bg-white/10" : "bg-gray-100"
+                }`}
+              >
+                {darkMode ? (
+                  <img
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
+                    className="w-5 h-5"
+                    alt="Light Mode"
+                  />
+                ) : (
+                  <img
+                    src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
+                    className="w-5 h-5"
+                    alt="Dark Mode"
+                  />
+                )}
+              </div>
+
+              <Hamburger
+                toggled={toggle}
+                size={24}
+                duration={0.8}
+                distance="lg"
+                toggle={setToggle}
+                color={darkMode ? "#ffffff" : "#000000"}
               />
-            </a>
+            </div>
           </div>
-          <div class="hidden justify-between items-center w-full md:flex md:w-auto ">
-            <ul
-              class={
-                "flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium"
-              }
+        </div>
+        
+        {/* Mobile Navigation */}
+        <AnimatePresence>
+          {toggle && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+              className={`md:hidden backdrop-blur-md border-b ${
+                darkMode
+                  ? "bg-white/10 border-white/20"
+                  : "bg-white/50 border-gray-200"
+              }`}
             >
-              {links.map((el) => (
-                <li className="cursor-pointer">
+              <div className="px-4 py-4 space-y-2">
+                {links.map((el, index) => (
                   <Link
+                    key={index}
                     to={el.route}
-                    activeClass={"text-white bg-blue-500"}
+                    activeClass="text-blue-500"
+                    className={`block py-3 px-4 text-lg font-medium transition-all duration-300 rounded-lg ${
+                      darkMode 
+                        ? "text-white hover:bg-white/10 hover:text-blue-400" 
+                        : "text-gray-700 hover:bg-gray-100 hover:text-blue-500"
+                    }`}
+                    style={{
+                      fontFamily: "'Inter', 'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif"
+                    }}
                     spy={true}
                     smooth={true}
-                    className={
-                      darkMode
-                        ? "block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
-                        : "block py-2 px-3 text-white hover:bg-blue-500 hover:text-black rounded-md"
-                    }
+                    onClick={() => setToggle(false)}
                   >
                     {el.name}
                   </Link>
-                </li>
-              ))}
-            </ul>
-            <div onClick={() => toggleTheme()}>
-              {darkMode ? (
-                <img
-                  src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
-                  className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
-                  alt=""
-                />
-              ) : (
-                <img
-                  src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
-                  className="w-6 ml-6 cursor-pointer hover:scale-1.50 block"
-                  alt=""
-                />
-              )}
-            </div>
-          </div>
-
-          <div className="flex md:hidden items-center">
-            <div onClick={() => toggleTheme()}>
-              {darkMode ? (
-                <img
-                  src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-sun-lighting-flaticons-flat-flat-icons.png"
-                  className="w-6 mr-4 cursor-pointer hover:scale-1.50 block"
-                  alt=""
-                />
-              ) : (
-                <img
-                  src="https://img.icons8.com/external-prettycons-lineal-color-prettycons/49/000000/external-moon-astrology-and-symbology-prettycons-lineal-color-prettycons.png"
-                  alt=""
-                  className="w-6 mr-4 cursor-pointer hover:scale-1.50 block"
-                />
-              )}
-            </div>
-
-            <Hamburger
-              toggled={toggle}
-              size={22}
-              duration={0.8}
-              distance={"lg"}
-              toggle={setToggle}
-              color={darkMode ? "#000000" : "#ffffff"}
-            />
-          </div>
-        </div>
-        {/* Mobile view nav bar */}
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
-      <AnimatePresence>
-        {toggle && (
-          <motion.div
-            initial={{ x: 100 }}
-            animate={{ x: 0, transition: { type: "spring" } }}
-            exit={{ x: 200, transition: { type: "spring" } }}
-            className={
-              darkMode
-                ? "bg-white py-2 px-2 md:p-0 z-50 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
-                : "bg-black py-2 px-2 md:p-0 z-50 fixed top-16 mt-2 rounded-lg shadow-lg right-2 block w-40"
-            }
-          >
-            <ul class="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
-              {links.map((el) => (
-                <Link
-                  to={el.route}
-                  activeClass={"text-white bg-blue-500"}
-                  className={
-                    darkMode
-                      ? "hover:bg-blue-500 text-black block px-3 py-2 rounded-md text-base font-medium mt-1 hover:text-white"
-                      : "hover:bg-blue-500 text-white block px-3 py-2 rounded-md text-base font-medium mt-1 hover:text-white"
-                  }
-                  spy={true}
-                  smooth={true}
-                  onClick={() => setToggle(false)}
-                >
-                  <li>{el.name}</li>
-                </Link>
-              ))}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
 };
