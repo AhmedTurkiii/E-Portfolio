@@ -20,9 +20,9 @@ const Projects = () => {
         </h4>
         <div className="mt-8 flex justify-between items-stretch flex-wrap">
           <Card
-            title="Weather Web Application (WeatherApp)"
-            description="Collaborated within a team of 4 engineers to develop a Python weather app with multimedia elements for visualizing current weather conditions."
-            techStack="Flask, OpenAI, WeatherAPI, IpstackAPI, Python, HTML, CSS"
+            title="Interactive Weather Web App"
+            description="Feature-rich weather dashboard with interactive visuals, location lookup, and real-time conditions."
+            techStack="Python, Flask, OpenAI, WeatherAPI, IpstackAPI, HTML, CSS"
             repoLink="https://github.com/aleguzmancs9/Weather"
           />
           <Card
