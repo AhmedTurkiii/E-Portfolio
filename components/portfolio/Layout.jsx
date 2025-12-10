@@ -52,7 +52,7 @@ export default function Layout({ children }) {
               onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               className="text-2xl font-bold text-white"
             >
-              AT<span className="text-blue-500">.</span>
+              TA<span className="text-blue-500">.</span>
             </a>
 
             {/* Desktop Navigation */}
