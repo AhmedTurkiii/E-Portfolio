@@ -34,10 +34,17 @@ export default function AboutSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative order-2 lg:order-1"
             >
-              <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-1">
-                <div className="w-full h-full rounded-3xl bg-[#111] flex items-center justify-center overflow-hidden">
+              <div className="grid grid-cols-2 gap-3 rounded-3xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-1">
+                <div className="aspect-square rounded-2xl bg-[#111] overflow-hidden">
                   <img 
-                    src="/E-Portfolio/ahmed-torki.jpg"
+                    src="/E-Portfolio/image1.jpg"
+                    alt="Torki Ahmed"
+                    className="w-full h-full object-cover opacity-80"
+                  />
+                </div>
+                <div className="aspect-square rounded-2xl bg-[#111] overflow-hidden">
+                  <img 
+                    src="/E-Portfolio/image2.jpg"
                     alt="Torki Ahmed"
                     className="w-full h-full object-cover opacity-80"
                   />
