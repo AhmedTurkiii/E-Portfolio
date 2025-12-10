@@ -37,7 +37,7 @@ export default function AboutSection() {
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-1">
                 <div className="w-full h-full rounded-3xl bg-[#111] flex items-center justify-center overflow-hidden">
                   <img 
-                    src="/ahmed-torki.jpg"
+                    src="/E-Portfolio/ahmed-torki.jpg"
                     alt="Torki Ahmed"
                     className="w-full h-full object-cover opacity-80"
                   />
