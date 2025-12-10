@@ -85,7 +85,7 @@ export default function AboutSection() {
                 className="space-y-4 text-gray-400 text-lg leading-relaxed"
               >
                 <p>
-                  I'm a Backend Software Engineer at Metafoodx, an AI-driven food-tech company, 
+                  I'm a Software Engineer at Metafoodx, an AI-driven food-tech company, 
                   where I build scalable microservices and integrate GenAI solutions. Currently 
                   pursuing my Bachelor's in Computer Science at CSU Monterey Bay with a 3.85 GPA.
                 </p>
