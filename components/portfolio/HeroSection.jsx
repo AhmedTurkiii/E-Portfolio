@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowDown, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
@@ -76,6 +76,20 @@ export default function HeroSection() {
             >
               Get In Touch
             </Button>
+            <a
+              href="https://drive.google.com/file/d/1eOXTPnxXnl5MJS6qn4lhpy8Oon1p7QL1/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-gray-700 text-white hover:bg-white/5 rounded-full px-8 gap-2"
+              >
+                <FileDown className="w-5 h-5" />
+                Download Resume
+              </Button>
+            </a>
           </motion.div>
           
           <motion.div
